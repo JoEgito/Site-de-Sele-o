@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Admin Dashboard</title>
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <a href="/index.html">StrongHouse</a>
+        </div>
+        <div class="items">
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-pie"></i>
+                <a href="/Dashboard/index.html">Dashboard</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                <a href="Configurações">Configurações</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-simple"></i>
+                <a href="Dashboard">Gráficos</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-person"></i>
+                <a href="Dashboard">Personais</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+                <a href="Dashboard">Alunos</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="/LOGIN/login.html">Login</a>
+            </li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="fa-solid fa-bell"></i>
+                <img src="/img/Qual-é-o-Perfil-do-Empreendedor.jpg" alt="">
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+
+        <div class="values">
+            <div class="val-box">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                    <h3>8,267</h3>
+                    <span>Novos Alunos</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-person"></i>
+                <div>
+                    <h3>8,267</h3>
+                    <span>Personais</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <div>
+                    <h3>8,267</h3>
+                    <span>Frequência</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <div>
+                    <h3>8,267</h3>
+                    <span>Lucros</span>
+                </div>
+            </div>
+        </div>
+        <dir class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Título</td>
+                        <td>Descrição</td>
+                        <td>Status</td>
+                        <td>Função</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/Qual-é-o-Perfil-do-Empreendedor.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/Qual-é-o-Perfil-do-Empreendedor.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/Qual-é-o-Perfil-do-Empreendedor.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/Qual-é-o-Perfil-do-Empreendedor.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="/img/perfil-do-profissional-de-Departamento-Pessoal-5.png" alt="">
+                            <div class="people-de">
+                                <h5>Jonh Doe</h5>
+                                <p>jonh@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                                <h5>Desenvolvedor Web</h5>
+                                <p>Software Engineer</p>
+                        </td>
+                        <td class="active">
+                            <p>Ativo</p>
+                        </td>
+                        <td class="role">
+                            <p>Administrador</p>
+                        </td>
+                        <td class="edit"><a href="#">Editar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </dir>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+    </script>
+
+
+
+    <script src="/Dashboard/script.js"></script>
+</body>
+</html>

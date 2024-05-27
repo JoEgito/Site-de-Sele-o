@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+<body>
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">StrongHouse</p>
+  </div>
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Rua da Academia, Massapê - CE
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Aberto: de 10:00 da manhã a 23:00 da noite</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:stronghouse@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">stronghouse@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <img src="/img/Inserir_um_título-removebg-preview.png" width="160" height="50" alt="StrongHouse - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="/index.html" class="logo">
+          <img src="/img/Inserir_um_título-removebg-preview.png" width="160" height="50" alt="StrongHouse - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Dashboard</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="/LOGIN/login.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Login</span>
+            </a>
+          </li>
+          
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Venha nos visitar</p>
+
+          <address class="body-4">
+            Rua da Academia, Massapê - CE, BR
+          </address>
+
+          <p class="body-4 navbar-text">Aberto: 10:00 ás 23:00</p>
+
+          <a href="mailto: stronghouse@gmail.com" class="body-4 sidebar-link">stronghouse@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Reservar</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +88-123-123456
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="/LOGIN/cadastro.html" class="btn btn-secondary">
+        <span class="text text-1">Cadastrar-se</span>
+
+        <span class="text text-2" aria-hidden="true">Cadastrar-se</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #HERO
+  -->
+
+  <section class="hero text-center" aria-label="home" id="home" >
+
+    <ul class="hero-slider" data-hero-slider>
+
+      <li class="slider-item active" data-hero-slider-item>
+
+        <div class="slider-bg">
+          <img src="/img/man-training-gym.jpg" width="1880" height="950" alt="" class="img-cover">
+        </div>
+        <!-- 
+        - Reservas
+      -->
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Faça seu Login como Aluno</h2>
+
+              <p class="form-text text-center">
+                Entre pela sua conta e aproveite nossos serviços
+              </p>
+
+              <div class="input-wrapper">
+                <input type="email" name="email" placeholder="Seu E-mail" autocomplete="off" class="input-field" required>
+
+                <input type="password" name="password" placeholder="Sua Senha" autocomplete="off" class="input-field" required>
+              </div>
+
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1"><a href="/index.html">Entrar</a></span>
+
+                <span class="text text-2" aria-hidden="true"><a href="/index.html">Entrar</a>
+                </span>
+              </button>
+
+            </form>
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Caso seja Personal</h2>
+              <p class="contact-label">Caso tenha dúvidas, ligue</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+
+              <div class="separator"></div>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1"><a href="/LOGIN/login_personal.html">Login como</a></span>
+
+                <span class="text text-2" aria-hidden="true"><a href="/LOGIN/login_personal.html">Personal</a>
+                </span>
+              </button>
+
+              
+              
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+        
+      </li>
+
+      
+
+  </section>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('/Grilli/assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="/Grilli/assets/images/MasterChef (2).svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Rua da Academia, Massapê - CE, BR
+          </address>
+
+          <a href="mailto:strong@gmail.com" class="body-4 contact-link">strong@gmail.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">Reservas : +88-123-123456</a>
+
+          <p class="body-4">
+            Aberto: 10:00 ás 23:00
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Ofertas especiais</p>
+
+          <p class="label-1">
+            Venha nos visitar e ganhe até <span class="span">20% de desconto</span> no plano
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="/index.html" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="/cardapio.html" class="label-2 footer-link hover-underline">Dashboard</a>
+          </li>
+
+          <li>
+            <a href="#sobre" class="label-2 footer-link hover-underline">Treinos</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024, direitos quase todos reservados, feitos por : José do Egito
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  
+
+   
+  <!-- 
+    - custom js link
+  -->
+  <script src="/menu.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

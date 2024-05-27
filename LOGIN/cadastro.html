@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        tags
+    -->
+    <title>Cadastro</title>
+    <meta name=" title" content="Login">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/Grilli/favicon.svg" type="image/svg+xml">
+
+    <!--Google fonte link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="/style.css">
+
+    <!--Preload imgs-->
+    <link rel="stylesheet" href="./Grilli/assets/images/hero-slider-1.jpg">
+    <link rel="stylesheet" href="./Grilli/assets/images/hero-slider-2.jpg">
+    <link rel="stylesheet" href="./Grilli/assets/images/hero-slider-3.jpg">
+
+
+</head>
+
+<body>
+    <!--PRELOADER-->
+    
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Grelha</p>
+    </div>
+
+
+
+
+
+    <!--TOPBAR-->
+
+    <div class="topbar">
+        <div class="container">
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+
+                <span class="span">
+                    Restaurante, Massapê, Ceará, BR
+                </span>
+            </address>
+
+
+            <div class="separator"></div>
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+
+                <span class="span">
+                    Diário: 8 da manhã ate 12 da noite
+                </span>
+            </div>
+            
+            <a href="tel:+55 (88) 9264-9589" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+
+                <span class="span">
+                    +55 (88) 9264-9589
+                </span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="mailto:whinchester0260@gmail.com" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    whinchester0260@gmail.com
+                </span>
+            </a>
+        </div>
+    </div>  
+
+
+    <!--header-->
+
+
+    <header class="header" data-header>
+        <div class="container">
+            <a href="/index.html" class="logo">
+                <img src="/Grilli/assets/images/MasterChef (2).svg" width="160" height="50" alt="">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+               <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+               </button>
+
+               <a href="#" class="logo">
+                <img src="/Grilli/assets/images/MasterChef (2).svg" width="160" height="50" alt="">
+               </a>
+
+               <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="/index.html" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+
+                        <span class="span">Home</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="/index.html" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+
+                        <span class="span">Horário</span>
+                    </a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="/LOGIN/login.html" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+
+                        <span class="span">Login</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#menu" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+
+                        <span class="span">Dashboard</span>
+                    </a>
+                </li>
+               </ul>
+
+               <div class="text-center">
+                <p class="headline-1 navbar-title">Venha nos visitar</p>
+
+
+                <address class="body-4">
+                    StrongHouse, Massapê, <br>
+                    Ceará, BR
+                </address>
+
+                <p class="body-4 navbar-text"></p>
+
+
+                <a href="mailto:whinchester0260@gmail.com" class="body-4 sidebar-link">whinchester0260@gmail.com</a>
+
+                <div class="separator"></div>
+
+                <p class="contact-label">Reservar</p>
+
+                <a href="tel:+55 (88) 92649589" class="body-1 contact-number hover-underline">+55 (88) 92649589</a>
+               </div>
+
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open-menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+     <!-- Código do preloader e header omitido para brevidade -->
+
+    <main>
+        <section class="reservation">
+            <div class="container">
+                <div class="form reservation-form bg-black-10">
+                    <form action="" class="form-left">
+                        <h2 class="headline-1 text-center">Cadastre-se</h2>
+                        <p class="form-text text-center">ou faça Login se já tiver uma conta</p>
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Seu Nome" autocomplete="off" class="input-field">
+                            <input type="text" placeholder="Número de Telefone" class="input-field" required="required" pattern="[0-9]+$">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="cpf" name="cpf" placeholder="CPF" autocomplete="off" maxlength="14" class="input-field">
+                            <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="input-field">
+                            <input type="password" name="password" placeholder="Senha" autocomplete="off" class="input-field" minlength="8">
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="icon-wrapper">
+                                <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                <select name="estado" id="estado" class="input-field">
+                                    <option value="">Selecione o Estado</option>
+                                </select>
+                                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                            </div>
+                            <div class="icon-wrapper">
+                                <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                <select name="cidade" id="cidade" class="input-field">
+                                    <option value="">Selecione a Cidade</option>
+                                </select>
+                                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                            </div>
+                            <div class="icon-wrapper">
+                                <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                                <input type="date" name="reservation-date" class="input-field">
+                                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">
+                            <span class="text text-1">Cadastre-se</span>
+                            <span class="text text-2" aria-hidden="true">Cadastre-se</span>
+                        </button>
+                    </form>
+                    <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+                        <h2 class="headline-1 text-center">Dúvidas?</h2>
+                        <p class="contact-label">Fale conosco</p>
+                        <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+                        <div class="separator"></div>
+                        <p class="contact-label">Localização</p>
+                        <address class="body-4">Rua da Academia, Massapê - CE, BR</address>
+                        <p class="contact-label">Horário de Funcionamento</p>
+                        <p class="body-4">Segunda a sexta <br> 10:00 às 23:00</p>
+                        <button type="submit" class="btn btn-secondary">
+                            <a href="/LOGIN/login.html"><span class="text text-1">Fazer Login caso </span></a>
+                            <a href="/LOGIN/login.html"><span class="text text-2" aria-hidden="true">Tenha uma conta</span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('/Grilli/assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="/Grilli/assets/images/MasterChef (2).svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Rua da Academia, Massapê - CE, BR
+          </address>
+
+          <a href="mailto:strong@gmail.com" class="body-4 contact-link">strong@gmail.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">Reservas : +88-123-123456</a>
+
+          <p class="body-4">
+            Aberto: 10:00 ás 23:00
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Ofertas especiais</p>
+
+          <p class="label-1">
+            Se inscreva e ganhe <span class="span">20% de desconto</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Seu e-mail" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Inscrever-se</span>
+
+              <span class="text text-2" aria-hidden="true">Inscrever-se</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="/index.html" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+          <li>
+            <a href="/index.html" class="label-2 footer-link hover-underline">Dashboard</a>
+          </li>
+          <li>
+            <a href="/LOGIN/login.html" class="label-2 footer-link hover-underline">Login</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024, direitos reservados, feitos por : Antonio José do Egito
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/Formulário/main.js"></script>
+  <script src="/menu.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+    
+    <script src="/Grilli/assets/js/script.js"></script>
+
+    <!--ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/LOGIN/cada.js"></script>
+    <script src="/Formulário/estados-cidades.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Preencher os estados
+            $.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados", function(data) {
+                var estados = $("#estado");
+                estados.append('<option value="">Selecione o Estado</option>');
+                data.forEach(function(estado) {
+                    estados.append('<option value="' + estado.id + '">' + estado.nome + '</option>');
+                });
+            });
+
+            // Preencher as cidades com base no estado selecionado
+            $("#estado").change(function() {
+                var estadoId = $(this).val();
+                var cidades = $("#cidade");
+                cidades.empty();
+                cidades.append('<option value="">Selecione a Cidade</option>');
+                if (estadoId) {
+                    $.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + estadoId + "/municipios", function(data) {
+                        data.forEach(function(cidade) {
+                            cidades.append('<option value="' + cidade.id + '">' + cidade.nome + '</option>');
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
